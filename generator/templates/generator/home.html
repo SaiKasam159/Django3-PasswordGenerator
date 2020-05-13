@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<body class="container text-center">
+    <h1>Passord Generator</h1>
+    <form action="password">
+        <select name="Length" >
+            <option value="6">6 characters long</option>
+            <option value="7">7 characters long</option>
+            <option value="8">8 characters long</option>
+            <option value="9">9 characters long</option>
+            <option value="10" selected="selected">10 characters long</option>
+            <option value="11">11 characters long</option>
+            <option value="12">12 characters long</option>
+            <option value="13">13 characters long</option>
+            <option value="14">14 characters long</option>
+            <option value="15">15 characters long</option>
+        </select> Length of Password
+        <br>
+        <input type="checkbox" name='capitalletters'>Capital Letters
+        <br>
+        <input type="checkbox" name='numbers'>Numbers
+        <br>
+        <input type="checkbox" name='specialcharacters'>Special Characters
+        <br>
+        <input type="submit" value='Generate Password' class="btn btn-primary">
+    </form>
+
+    <a href="{% url 'about' %}" class="btn btn-success">About</a>
+
+
+</body>
+
